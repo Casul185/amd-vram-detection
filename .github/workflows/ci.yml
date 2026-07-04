@@ -1,0 +1,26 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  lint-and-compile:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Byte-compile
+        run: python -m py_compile vram.py
+      - name: Ruff
+        run: |
+          pip install ruff
+          ruff check .
+      - name: Run (lists adapters on Windows; --help everywhere)
+        shell: bash
+        run: |
+          python vram.py --help
+          if [ "$RUNNER_OS" = "Windows" ]; then python vram.py; fi
