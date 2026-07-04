@@ -55,6 +55,10 @@ list_display_adapters()       # -> [{"name": ..., "vram_bytes": ..., "vram_gb": 
 
 Requires Python ≥ 3.7. No dependencies.
 
+## Support
+
+If this project is useful to you, you can support it at [ko-fi.com/casul185](https://ko-fi.com/casul185).
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
