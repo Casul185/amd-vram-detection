@@ -1,5 +1,7 @@
 # amd-vram-detection
 
+[![CI](https://github.com/casul185/amd-vram-detection/actions/workflows/ci.yml/badge.svg)](https://github.com/casul185/amd-vram-detection/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/casul185/amd-vram-detection)](https://github.com/casul185/amd-vram-detection/releases) ![License](https://img.shields.io/github/license/casul185/amd-vram-detection)
+
 Read the **true** VRAM size of a GPU on Windows from Python — working around the WMI value that silently caps at 4 GB. Single file, stdlib only.
 
 ```
@@ -66,3 +68,7 @@ If this project is useful to you, you can support it at [ko-fi.com/casul185](htt
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Used by
+
+[**frameseer**](https://github.com/casul185/frameseer) uses this to read true GPU VRAM for its performance recommendations.
