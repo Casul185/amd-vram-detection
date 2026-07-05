@@ -19,6 +19,8 @@ jobs:
         run: |
           pip install ruff
           ruff check .
+      - name: Update-check regression
+        run: python tests/test_update_check.py
       - name: Run (lists adapters on Windows; --help everywhere)
         shell: bash
         run: |

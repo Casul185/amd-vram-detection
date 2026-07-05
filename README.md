@@ -61,6 +61,12 @@ list_display_adapters()       # -> [{"name": ..., "vram_bytes": ..., "vram_gb": 
 
 Requires Python ≥ 3.7. No dependencies.
 
+## Staying up to date
+
+To be notified of new releases, **Watch** this repo on GitHub → the **Custom** dropdown → check **Releases**. The full list lives at [github.com/casul185/amd-vram-detection/releases](https://github.com/casul185/amd-vram-detection/releases).
+
+`vram.py` also checks for updates itself: on a normal run, at most **once per 24h**, it makes a best-effort call to GitHub and, if a newer release exists, prints a single one-line notice to stderr. It never auto-updates and never nags. To disable this entirely, set `AMD_VRAM_NO_UPDATE_CHECK=1` in your environment.
+
 ## Support
 
 If this project is useful to you, you can support it at [ko-fi.com/casul185](https://ko-fi.com/casul185).

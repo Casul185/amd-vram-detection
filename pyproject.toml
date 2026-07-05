@@ -1,6 +1,6 @@
 [project]
 name = "amd-vram-detection"
-version = "0.1.0"
+version = "0.1.1"
 description = "Read true GPU VRAM on Windows via the qwMemorySize registry value (WMI caps at 4 GB). Single file, stdlib only."
 requires-python = ">=3.7"
 license = { text = "MIT" }
