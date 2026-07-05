@@ -31,6 +31,10 @@ HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be1031
 
 Each numbered subkey is one display adapter. `vram.py` enumerates them with `winreg`, matches `DriverDesc`, and reads the QWORD — correct for >4 GB cards. A legacy 32-bit `HardwareInformation.MemorySize` fallback is read (and labelled as possibly capped) when the QWORD is absent, e.g. under very old drivers.
 
+## Installation
+
+There is nothing to install — it's one file, stdlib only (Python ≥ 3.7, Windows). **Copy `vram.py` into your project** and import it, or run it directly. No `pip`, no dependencies.
+
 ## Usage
 
 ```
